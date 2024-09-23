@@ -5,6 +5,20 @@
 }
 
 body {
-    background: var(--tg-theme-bg-color);
-    color: var(--tg-theme-text-color);
+    background: #f8f8f8;
+    font-family: "Roboto Mono", monospace;
 }
+
+.progress {
+    margin-top: 20px;
+    width:310px;
+    height:40px;
+    -webkit-mask:linear-gradient(90deg,#000 70%,#0000 0) 0/3.6% 100% repeat padding-box content-box;
+    background:
+     linear-gradient(#000 0 0) 0/0% no-repeat
+     #ddd;
+    /* animation:p4 2s infinite steps(6); */
+  }
+  /* @keyframes p4 {
+      100% {background-size:120%}
+  } */

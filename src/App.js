@@ -1,21 +1,26 @@
-import { useEffect } from "react";
+// import { useEffect } from "react";
 
-const tg = window.Telegram.WebApp;
+import { Route, Router } from "react-router-dom";
+import Sminex from "./pages/Sminex";
+
+// const tg = window.Telegram.WebApp;
 
 function App() {
 
-  useEffect(() => {
-    tg.ready();
-  }, []);
+  // useEffect(() => {
+  //   tg.ready();
+  // }, []);
 
-  const onClose = () => {
-    tg.close();
-  };
+  // const onClose = () => {
+  //   tg.close();
+  // };
 
 
   return (
     <div className="App">
-      <button onClick={onClose}>Закрыть</button>
+      <Router>
+        <Route exact path="/" component={Sminex} />
+      </Router>
     </div>
   );
 }
